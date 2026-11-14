@@ -1,0 +1,6 @@
+{
+  "name": "HM College of Science and Technology, Manjeri",
+  "description": "Official institutional portal for HM College of Science and Technology, Manjeri, Malappuram — affiliated to the University of Calicut, offering UG & PG programs in Science, Commerce, Management, and Computer Applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

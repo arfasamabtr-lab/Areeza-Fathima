@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, serif;
+
+  --color-forest: #134e2f;
+  --color-forest-deep: #0e3b23;
+  --color-forest-mid: #186039;
+  --color-forest-action: #1d7344;
+  --color-forest-tint: #eefbf3;
+  --color-forest-border: #ccebd7;
+
+  --color-navy: #00193b;
+  --color-navy-mid: #0f2e59;
+  --color-saffron: #fe932c;
+  --color-saffron-ink: #2f1500;
+  --color-canvas: #f8f9ff;
+  --color-surface-low: #eff4ff;
+  --color-ink: #0b1c30;
+  --color-ink-muted: #44474f;
+  --color-hairline: #d4dce8;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

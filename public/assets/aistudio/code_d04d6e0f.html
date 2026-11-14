@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#93000a",
+          "on-secondary": "#ffffff",
+          "surface-dim": "#cbdbf5",
+          "tertiary-container": "#00314e",
+          "surface-variant": "#d3e4fe",
+          "on-secondary-container": "#663500",
+          "inverse-on-surface": "#eaf1ff",
+          "on-secondary-fixed-variant": "#6e3900",
+          "on-background": "#0b1c30",
+          "surface-container-high": "#dce9ff",
+          "on-error": "#ffffff",
+          "on-primary-container": "#7c97c8",
+          "outline-variant": "#c4c6d0",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed-variant": "#004b73",
+          "secondary-container": "#fe932c",
+          "on-tertiary-container": "#399de1",
+          "surface-tint": "#445f8c",
+          "on-primary-fixed": "#001b3e",
+          "on-primary-fixed-variant": "#2c4773",
+          "tertiary": "#001b2e",
+          "surface-container": "#e5eeff",
+          "primary": "#00193b",
+          "tertiary-fixed": "#cce5ff",
+          "tertiary-fixed-dim": "#93ccff",
+          "surface-container-highest": "#d3e4fe",
+          "inverse-surface": "#213145",
+          "outline": "#747780",
+          "on-secondary-fixed": "#2f1500",
+          "on-surface": "#0b1c30",
+          "on-tertiary": "#ffffff",
+          "inverse-primary": "#adc7fb",
+          "error-container": "#ffdad6",
+          "secondary-fixed-dim": "#ffb77d",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#f8f9ff",
+          "on-primary": "#ffffff",
+          "background": "#f8f9ff",
+          "surface-bright": "#f8f9ff",
+          "on-surface-variant": "#44474f",
+          "surface-container-low": "#eff4ff",
+          "primary-container": "#0f2e59",
+          "primary-fixed-dim": "#adc7fb",
+          "secondary-fixed": "#ffdcc3",
+          "primary-fixed": "#d7e3ff",
+          "on-tertiary-fixed": "#001d31",
+          "secondary": "#904d00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "margin-mobile": "1.25rem",
+          "gutter-mobile": "1rem",
+          "margin": "3rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "body-md": ["Inter"],
+          "body-sm": ["Inter"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "body-lg": ["Inter"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "title-md": ["Plus Jakarta Sans"],
+          "display-hero-mobile": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "display-hero": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+          "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+          "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+          "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+          "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+          "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.025em", "fontWeight": "600" }],
+          "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }],
+          "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+          "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+          "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+        }
+      }
+    }
+  };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><!-- Two-tier Header -->
+<header class="w-full bg-[#134e2f] z-50 relative shadow-md"><div class="border-b border-[#1a613b]/60 bg-[#134e2f] relative overflow-hidden py-5"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center justify-center text-center relative z-10"><div class="flex flex-col items-center justify-center text-center gap-1.5"><div class="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 text-center md:text-left"><a class="block shrink-0 group" href="#"><img alt="HM College Crest Logo" class="h-28 sm:h-32 w-auto object-contain p-2 rounded-xl bg-white/95 border border-white/40 shadow-md group-hover:scale-105 transition-transform mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAAJIJnBjlvv05Y188kPiPNC7CpF19pPKCR56auU0nIoAe5o5SR1znCEkWF9S2d5SAFEfRjvHkcvdXGA1Ex_RnCuMfTvSs-RVdH4E7YKrOgh-1FAGysO-ONxLus1ZkyxTq75dZlAvDhMKsAOku6rbbVEw2AvA7Mt-2W7C6-6P3TlhGZEIfiwFQvMkFI4KjL7XyJhkk8wxXHIxFUUQZINNTwwMtC95FP6Id6Mi2q5Dunj-4a2FpVkxq"></a><div class="flex flex-col items-center md:items-start max-w-3xl"><h1 class="text-xl sm:text-2xl md:text-3xl font-headline-lg font-bold text-white tracking-tight leading-tight" style="-webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.6) 0px 0px 1px; letter-spacing: -0.015em; color: rgb(255, 255, 255);">HM College of Science and Technology</h1><p class="text-xs sm:text-sm font-medium flex items-center justify-center md:justify-start flex-wrap gap-1.5 mt-1 tracking-wide" style="-webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; color: rgb(220, 252, 231); text-shadow: rgba(0, 0, 0, 0.35) 0px 1px 2px;"><span class="inline-block w-2 h-2 rounded-full bg-emerald-400" style="box-shadow: 0 0 6px rgba(52, 211, 153, 0.8);"></span><span class="font-medium" style="color: rgb(236, 253, 245);">Manjeri, Malappuram</span><span class="text-white/40">•</span><span class="font-normal" style="color: rgb(241, 245, 249);">Affiliated to University of Calicut</span></p><div class="mt-3"></div></div></div></div></div></div></header><main class="w-full bg-surface-container-lowest"><div class="flex flex-col w-full"><!-- Full Screen / Hero Slideshow -->
+<section class="relative w-full h-[85vh] min-h-[580px] max-h-[820px] overflow-hidden bg-slate-900 text-white select-none"><nav class="absolute top-0 left-0 w-full z-40 bg-transparent text-white border-b border-white/10" style="background: transparent; box-shadow: none; border-bottom: 1px solid rgba(255, 255, 255, 0.15);"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between py-3 sm:py-4"><div class="flex items-center overflow-x-auto py-0 gap-3 sm:gap-6 md:gap-8 scrollbar-none text-lg md:text-xl font-medium"><a aria-current="page" class="px-6 py-4 text-white font-bold bg-white/20 border-b-2 border-secondary-container transition-colors inline-flex items-center gap-2 backdrop-blur-sm rounded-t" data-path="home" href="#" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;"><span class="material-symbols-outlined text-[22px]">home</span><span>Home</span></a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="about" href="#about" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">About Us</a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="academics" href="#academics" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">Academics</a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="admissions" href="#admissions" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">Admissions</a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="facilities" href="#" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">Facilities</a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="campus-life" href="#campus-life" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">Campus Life</a><a class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors tracking-wide" data-path="contact" href="#" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;">Contact</a><div class="relative group"><button class="px-5 py-4 text-white hover:text-white hover:bg-white/15 rounded transition-colors inline-flex items-center gap-1.5 tracking-wide" data-path="more" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;"><span>More</span><span class="material-symbols-outlined text-[20px]">expand_more</span></button></div></div><div class="hidden md:flex items-center gap-2 pl-4 py-2"><span class="text-xs md:text-sm text-white uppercase tracking-widest font-semibold flex items-center gap-1.5" style="text-shadow: rgba(0, 0, 0, 0.8) 0px 1px 3px;"><span class="material-symbols-outlined text-[20px] text-secondary-container">stars</span>Excellence in Education</span></div></div></nav>
+<!-- Slides Container -->
+<div class="relative w-full h-full" id="hero-slider">
+<!-- Slide 1 -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+<img alt="Lush Kerala college campus with students and modern academic buildings" class="w-full h-full object-cover object-center transform scale-100 transition-transform duration-7000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBipWUqyJJMQhnSjtjmIWSFyPj5qY9QXH5HiHGgxVEDTmfFbnQIUpgPqAn0VbnLK3e__cGQLLos84ypTAtM4BA_obrjOm0YGvtQ_A4kLPgZY4udIukEtCZ24SFTn0C5GDldni_T4_t9SDNhx7q66AAg7gcvSJH5VKvu9zfW9FHHo2b4usnI8H3JHixUNcPsNGKMYxavBd-tmr6PfGU_ZYBTnFKWkwfPyLATALH4fZ4">
+</div>
+<!-- Slide 2 -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0">
+<img alt="Modern university library and computer lab study hall" class="w-full h-full object-cover object-center transform scale-100 transition-transform duration-7000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVQ27MFnzsxt6q4TQwczVkXLxppuiNDNwC9Pze9vFsh-frvFMYzD4OfbCYHoNG_F37Qbqy1EocaL1nrjzOWcj_M0MDo5PPbIz3Re2_DwJ3hmQTtObeDtqYdCxmqrnUYGIP02_oxLgskO7_JP1MaTzY_ZIoFDb6BeanYrUccDz9XWrC6LxAuGxlBaNK7WlvMBvDWvjtQGL8v7y2tLG-Zi2oCPdYhW0Wn2OhHGeKKg8">
+</div>
+<!-- Slide 3 -->
+<div class="hero-slide absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10">
+<img alt="Joyous college graduation day convocation ceremony" class="w-full h-full object-cover object-center transform scale-100 transition-transform duration-7000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxamjB7yho7XRH32RaGNe-go6xJcKhEG766FwJ9RHDMj9xTcSzHLj-EuZdTxdUlYmV_zml0-_nWxBl-9NG6GoRitQU1bT9Ab0mo4ehyJoBBl8RcQXb7_yJ-YiihZdmDK_Xq8hraQuvrSynEfw6gIh5JjXy8XrMeewXjOcXoiIv5lkHHFLEX6zLx5cPChr-L58OcaAr0BcExro2PjuMmX7RQszRHOzubyCldRd4uOA">
+</div>
+<!-- Dark Gradient Overlay for optimal legibility -->
+<div class="absolute inset-0 z-20 pointer-events-none mix-blend-color" style="background: linear-gradient(120deg, rgba(234, 114, 25, 0.18) 0%, rgba(254, 147, 44, 0.08) 45%, rgba(17, 24, 39, 0.25) 100%);"></div><div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/30 z-20 pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-20 pointer-events-none" style="background: linear-gradient(to top, rgba(10, 5, 3, 0.88) 0%, rgba(30, 15, 8, 0.3) 30%, transparent 65%, rgba(0, 0, 0, 0.35) 100%);"></div>
+<!-- Hero Content Overlay -->
+<div class="relative z-30 max-w-7xl mx-auto h-full px-6 lg:px-12 flex flex-col justify-center items-start pb-8">
+<div class="max-w-2xl lg:max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-emerald-300 mb-6 border border-white/20 shadow-lg">
+<span class="material-symbols-outlined text-[18px] text-emerald-400">verified</span>
+<span class="font-label-sm text-xs uppercase tracking-wider font-semibold text-white">Affiliated to University of Calicut • Manjeri</span>
+</div>
+<h1 class="font-display-hero text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-white tracking-tight leading-[1.15] mb-5 drop-shadow-md">
+          Empowering youth through quality education in <span class="text-secondary-container italic font-serif">Manjeri.</span>
+</h1>
+<p class="font-body-lg text-base sm:text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed mb-8 drop-shadow">
+          Welcome to HM College of Science and Technology, Manjeri. Offering premier UG &amp; PG degree programs, fostering academic rigor, career readiness, innovative learning, and holistic community development across Malappuram.
+        </p>
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary-container text-on-secondary-container font-label-md text-base px-7 py-3.5 rounded shadow-lg hover:brightness-110 active:scale-95 transition-all font-bold" data-path="apply-now" href="#">
+<span>Apply Now</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-label-md text-base px-7 py-3.5 rounded border border-white/30 transition-all font-semibold shadow" data-path="facilities" href="#">
+<span>Explore Programs</span>
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Navigation Arrows -->
+<button aria-label="Previous Slide" class="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all hover:scale-110 active:scale-95" id="slider-prev">
+<span class="material-symbols-outlined text-[24px]">chevron_left</span>
+</button>
+<button aria-label="Next Slide" class="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all hover:scale-110 active:scale-95" id="slider-next">
+<span class="material-symbols-outlined text-[24px]">chevron_right</span>
+</button>
+<!-- Carousel Indicator Dots -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3">
+<button aria-label="Slide 1" class="slider-dot h-2 rounded-full transition-all w-2.5 bg-white/50" data-index="0"></button>
+<button aria-label="Slide 2" class="slider-dot h-2 rounded-full hover:bg-white transition-all w-2.5 bg-white/50" data-index="1"></button>
+<button aria-label="Slide 3" class="slider-dot h-2 rounded-full hover:bg-white transition-all w-8 bg-secondary-container" data-index="2"></button>
+</div>
+</div>
+</section>
+<!-- Carousel Script -->
+<script>
+  (function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevBtn = document.getElementById('slider-prev');
+    const nextBtn = document.getElementById('slider-next');
+    let currentIndex = 0;
+    let timer = null;
+
+    function showSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+
+      slides.forEach((slide, i) => {
+        if (i === currentIndex) {
+          slide.classList.remove('opacity-0', 'z-0');
+          slide.classList.add('opacity-100', 'z-10');
+        } else {
+          slide.classList.remove('opacity-100', 'z-10');
+          slide.classList.add('opacity-0', 'z-0');
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        if (i === currentIndex) {
+          dot.classList.remove('w-2.5', 'bg-white/50');
+          dot.classList.add('w-8', 'bg-secondary-container');
+        } else {
+          dot.classList.remove('w-8', 'bg-secondary-container');
+          dot.classList.add('w-2.5', 'bg-white/50');
+        }
+      });
+    }
+
+    function startAutoSlide() {
+      stopAutoSlide();
+      timer = setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 4500);
+    }
+
+    function stopAutoSlide() {
+      if (timer) clearInterval(timer);
+    }
+
+    if (prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        showSlide(currentIndex - 1);
+        startAutoSlide();
+      });
+      nextBtn.addEventListener('click', () => {
+        showSlide(currentIndex + 1);
+        startAutoSlide();
+      });
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        showSlide(i);
+        startAutoSlide();
+      });
+    });
+
+    const sliderContainer = document.getElementById('hero-slider');
+    if (sliderContainer) {
+      sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+      sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    }
+
+    startAutoSlide();
+  })();
+</script><section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full" id="about" style="border-top: 1px solid rgb(204, 235, 215); border-bottom: 1px solid rgb(204, 235, 215); background: rgb(238, 251, 243);"><div class="grid grid-cols-1 gap-6 md:grid-cols-2" style="border-top: 1px dashed rgba(27, 100, 58, 0.25); border-bottom: 1px dashed rgba(27, 100, 58, 0.25); padding-top: 1.5rem; padding-bottom: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;"><div class="bg-surface-container-lowest rounded-full aspect-square w-full max-w-[240px] mx-auto p-6 border border-outline-variant/60 shadow-sm flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group relative overflow-hidden" style="aspect-ratio: 1 / 1;"><div class="w-10 h-10 flex items-center justify-center mb-2 transition-transform group-hover:scale-105 rounded-full" style="background: linear-gradient(145deg, rgb(255, 255, 255), rgb(226, 232, 240)); box-shadow: rgba(15, 46, 89, 0.18) 0px 6px 12px -2px, rgba(255, 255, 255, 0.9) 0px 2px 2px inset, rgba(0, 0, 0, 0.12) 0px -2px 3px inset; border: 1px solid rgba(255, 255, 255, 0.8);"><span class="material-symbols-outlined text-primary text-[20px]" style="filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px);">workspace_premium</span></div><div class="font-display-hero text-[34px] leading-tight font-bold text-primary mb-1">12<span class="text-secondary-container">+</span></div><h3 class="font-title-md text-[15px] font-bold text-primary leading-tight">Degree Programs</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-snug px-2">B.Sc, B.Com, BBA, BCA, M.Com &amp; tech.</p></div><div class="bg-surface-container-lowest rounded-full aspect-square w-full max-w-[240px] mx-auto p-6 border border-outline-variant/60 shadow-sm flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group relative overflow-hidden" style="aspect-ratio: 1 / 1;"><div class="w-10 h-10 flex items-center justify-center mb-2 transition-transform group-hover:scale-105 rounded-full" style="background: linear-gradient(145deg, rgb(255, 255, 255), rgb(226, 232, 240)); box-shadow: rgba(15, 46, 89, 0.18) 0px 6px 12px -2px, rgba(255, 255, 255, 0.9) 0px 2px 2px inset, rgba(0, 0, 0, 0.12) 0px -2px 3px inset; border: 1px solid rgba(255, 255, 255, 0.8);"><span class="material-symbols-outlined text-primary text-[20px]" style="filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px);">school</span></div><div class="font-display-hero text-[34px] leading-tight font-bold text-primary mb-1">6<span class="text-secondary-container">+</span></div><h3 class="font-title-md text-[15px] font-bold text-primary leading-tight">PG Programs</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-snug px-2">M.Com, M.Sc &amp; research tracks.</p></div><div class="bg-surface-container-lowest rounded-full aspect-square w-full max-w-[240px] mx-auto p-6 border border-outline-variant/60 shadow-sm flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group relative overflow-hidden" style="aspect-ratio: 1 / 1;"><div class="w-10 h-10 flex items-center justify-center mb-2 transition-transform group-hover:scale-105 rounded-full" style="background: linear-gradient(145deg, rgb(255, 255, 255), rgb(226, 232, 240)); box-shadow: rgba(15, 46, 89, 0.18) 0px 6px 12px -2px, rgba(255, 255, 255, 0.9) 0px 2px 2px inset, rgba(0, 0, 0, 0.12) 0px -2px 3px inset; border: 1px solid rgba(255, 255, 255, 0.8);"><span class="material-symbols-outlined text-primary text-[20px]" style="filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px);">trending_up</span></div><div class="font-display-hero text-[34px] leading-tight font-bold text-primary mb-1">94.2<span class="text-secondary-container">%</span></div><h3 class="font-title-md text-[15px] font-bold text-primary leading-tight">Career &amp; Higher Ed</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-snug px-2">Placements, campus drives &amp; honors.</p></div><div class="bg-surface-container-lowest rounded-full aspect-square w-full max-w-[240px] mx-auto p-6 border border-outline-variant/60 shadow-sm flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow group relative overflow-hidden" style="aspect-ratio: 1 / 1;"><div class="w-10 h-10 flex items-center justify-center mb-2 transition-transform group-hover:scale-105 rounded-full" style="background: linear-gradient(145deg, rgb(255, 255, 255), rgb(226, 232, 240)); box-shadow: rgba(15, 46, 89, 0.18) 0px 6px 12px -2px, rgba(255, 255, 255, 0.9) 0px 2px 2px inset, rgba(0, 0, 0, 0.12) 0px -2px 3px inset; border: 1px solid rgba(255, 255, 255, 0.8);"><span class="material-symbols-outlined text-primary text-[20px]" style="filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px);">history_edu</span></div><div class="font-display-hero text-[34px] leading-tight font-bold text-primary mb-1">20<span class="text-secondary-container">+</span></div><h3 class="font-title-md text-[15px] font-bold text-primary leading-tight">Years of Service</h3><p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-snug px-2">Higher education excellence in Malappuram.</p></div></div></section><section class="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full" style="border-bottom: 1px solid rgb(226, 232, 240);"><div class="text-center max-w-2xl mx-auto mb-10"><h2 class="font-headline-lg text-headline-lg text-primary mt-1 tracking-tight">Principal's Thought</h2></div><div class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl overflow-hidden shadow-sm flex flex-col lg:flex-row items-stretch"><div class="lg:w-2/5 p-8 flex flex-col items-center justify-center bg-surface-container-low/50 border-b lg:border-b-0 lg:border-r border-outline-variant/60 text-center"><div class="relative mb-5"><div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto flex items-center justify-center bg-slate-100"><img src="https://lh3.googleusercontent.com/aida/ALJJyrCyI9yJn4WupMJokgg7QTLX5z05I6u-l7cYjm4yJCoE2WTHatnOwBcWijZJ8JwYjK8DHfnQ_vi4uedP2YUtsJsY6WmXQUeFkwceb0c-33cXEmKe93gcKImdOag43nrQJGCfgvix2-IBG3vOALzDECe4aTiUyJIU5k_v1rm4tCcCEc6iRaOtabmYgzIVVV9GMbKTkRJ3zaWfJ-h3rYi6snnBVYq6tQYz_PuRiSWylhE" alt="Dr. Rajesh Sharma, Principal" class="w-full h-full object-cover"></div></div><div class="mt-2"><h3 class="text-xl font-bold font-headline-sm text-primary">Dr. Rajesh Sharma</h3><p class="text-xs text-on-surface-variant font-medium mt-0.5">M.Sc., Ph.D., Post-Doc (IISc)</p><p class="text-xs text-secondary font-medium mt-0.5">Principal, HM College of Science &amp; Technology</p></div></div><div class="lg:w-3/5 p-8 lg:p-10 flex flex-col justify-between bg-surface-container-lowest"><div class="relative"><span class="material-symbols-outlined text-emerald-400 text-5xl opacity-40 select-none block mb-2">format_quote</span><blockquote class="font-serif italic text-lg sm:text-xl text-primary leading-relaxed">"Education is not merely the acquisition of knowledge, but the illumination of intellect and character. At HM College, we nurture curious minds to pursue truth, embrace innovation, and serve society with integrity and empathy. Every student is a beacon of future possibilities."</blockquote></div></div></div></section><section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full" id="campus-life"><div class="text-center max-w-2xl mx-auto mb-10"><h2 class="font-headline-lg text-headline-lg text-primary mt-1 tracking-tight">Manager's Thought</h2></div><div class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl overflow-hidden shadow-sm flex flex-col lg:flex-row-reverse items-stretch"><div class="lg:w-2/5 p-8 flex flex-col items-center justify-center bg-surface-container-low/50 border-b lg:border-b-0 lg:border-l border-outline-variant/60 text-center"><div class="relative mb-5"><div class="w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl relative aspect-square mx-auto bg-slate-900"><img src="https://lh3.googleusercontent.com/aida/ALJJyrAFyA-mfjSzB7R2lIUqPNQAEOxysnuCQRdK1rmwLYgCx8AFR73KcguQDEmISYNkV8pPcVxYlQK7uiEy2WypbuI9Mp783KgfMO-Ce1Zi-FIiEuGU_8HpckQyrOhjthC9HDjbWWXNFj2Qpbh1K_K3rPdRY5Vi72-tkKk86O31xcYdBtSCnoNojvGSczuryTplVAY6ztch5G4_fkn6572b0XZq8hif_saEt0xdVyC3Aj9d" alt="Dr. Vikram Singh, College Manager &amp; Trust Director" class="w-full h-full object-cover object-top"></div><div class="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container border border-secondary-container shadow-sm whitespace-nowrap"><span class="text-[11px] font-bold uppercase tracking-wider">Management &amp; Trust Board</span></div></div><div class="mt-2"><h3 class="text-xl font-bold font-headline-sm text-primary">Dr. Vikram Singh</h3><p class="text-xs text-on-surface-variant font-medium mt-0.5">M.Tech., MBA, Ph.D. (Education Management)</p><p class="text-xs text-secondary font-medium mt-0.5">Manager &amp; Director, HM College Trust</p></div></div><div class="lg:w-3/5 p-8 lg:p-10 flex flex-col justify-between bg-surface-container-lowest"><div class="relative"><span class="material-symbols-outlined text-secondary-container text-5xl opacity-40 select-none block mb-2">format_quote</span><blockquote class="font-serif italic text-lg sm:text-xl text-primary leading-relaxed">"Our mission is to bridge ambition with opportunity by building world-class infrastructure and fostering an inclusive academic environment in Malappuram. We believe quality education must be accessible to every deserving student, equipping youth with the skills to lead and thrive in a dynamic global landscape."</blockquote></div><div class="mt-8 pt-6 border-t border-outline-variant/60"><div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-secondary text-[20px]">target</span><h4 class="font-title-md text-base sm:text-lg font-bold text-primary tracking-tight">Institutional Strategic Objectives</h4></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5"><div class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low/50 border border-outline-variant/60"><span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0 mt-0.5">check_circle</span><div><h5 class="text-[13px] font-bold text-primary leading-snug">Academic Distinction</h5><p class="text-[12px] text-on-surface-variant leading-relaxed mt-0.5">Deliver value-oriented UG &amp; PG education fostering analytical thinking and research.</p></div></div><div class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low/50 border border-outline-variant/60"><span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0 mt-0.5">check_circle</span><div><h5 class="text-[13px] font-bold text-primary leading-snug">Inclusive Opportunity</h5><p class="text-[12px] text-on-surface-variant leading-relaxed mt-0.5">Ensure accessible higher education across Malappuram with robust scholarships.</p></div></div><div class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low/50 border border-outline-variant/60"><span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0 mt-0.5">check_circle</span><div><h5 class="text-[13px] font-bold text-primary leading-snug">Industry &amp; Skill Alignment</h5><p class="text-[12px] text-on-surface-variant leading-relaxed mt-0.5">Equip students with industry-relevant skills, certifications, and placement mentorship.</p></div></div><div class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low/50 border border-outline-variant/60"><span class="material-symbols-outlined text-emerald-400 text-[18px] shrink-0 mt-0.5">check_circle</span><div><h5 class="text-[13px] font-bold text-primary leading-snug">Holistic Campus Culture</h5><p class="text-[12px] text-on-surface-variant leading-relaxed mt-0.5">Cultivate ethical leadership, social responsibility, and vibrant student-led development.</p></div></div></div></div></div></div></section><section class="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full"><div class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6" style="border: 1px solid rgba(29, 115, 68, 0.25); background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgba(29, 115, 68, 0.04) 100%);"><div class="text-center sm:text-left"><h3 class="font-headline-sm text-headline-sm text-primary font-bold">Have questions about admissions or enrollment?</h3><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Connect directly with our admissions desk at HM College, Manjeri.</p></div><div class="flex flex-wrap items-center gap-3 shrink-0"><a class="inline-flex items-center gap-2 text-white font-label-md text-label-md px-5 py-2.5 rounded shadow-sm hover:brightness-110 active:scale-95 transition-all font-semibold" data-path="contact" href="#" style="background-color: rgb(29, 115, 68);"><span class="material-symbols-outlined text-[18px]">support_agent</span><span>Contact Us</span></a></div></div></section></div></main><footer class="w-full pt-12 pb-8 text-white" style="background-color: rgb(24, 96, 57); border-top: 1px solid rgb(35, 133, 79);"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"><div class="flex flex-col gap-3"><div class="flex items-center gap-2"><img alt="HM College Manjeri Crest Logo" class="h-10 w-auto object-contain rounded-md bg-white p-1 shadow-sm border border-white/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhgq45dnYuf-AnKiqVWn0ZyOBAmIgNvwNq7mG-MAs6ZIxnu8YRaeOeHHNKsOKOUajuCEm4gtYm1gqM7_3gHP1N987LT499xMtxh2y1pgzubT-xfFUoJrhazwjtJVQTClnvHxAk8iPsKp_iraGGD5ooUr2lqaprvqJFfGyI2BkPdTV1lQdzILqDOvPMdki_vPuqN9SVo6AjbrSgt5UAACQOE6-dU2V9oGUBtNx46wO4GCmPNQjYEu5F"><span class="font-title-md text-title-md text-white font-bold">HM College Manjeri</span></div><p class="font-body-sm text-body-sm text-white/80 leading-relaxed">HM College of Science and Technology is committed to academic distinction, ethical leadership, and empowering scholars across Malappuram and beyond.</p></div><div><h3 class="font-title-md text-title-md text-white font-semibold mb-4">Quick Links</h3><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-white/80"><li><a class="hover:text-emerald-200 transition-colors" data-path="home" href="#">Home</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="about" href="#about">About Us</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="academics" href="#academics">Academics</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="admissions" href="#admissions">Admissions</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="facilities" href="#">Facilities</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="campus-life" href="#campus-life">Campus Life</a></li><li><a class="hover:text-emerald-200 transition-colors" data-path="contact" href="#">Contact</a></li><li><a class="hover:text-emerald-200 transition-colors inline-flex items-center gap-1" data-path="more" href="#"><span>More</span><span class="material-symbols-outlined text-[14px]">expand_more</span></a></li></ul></div><div><h3 class="font-title-md text-title-md text-white font-semibold mb-4">Contact Info</h3><div class="flex flex-col gap-3 font-body-sm text-body-sm text-white/80"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-emerald-200 mt-0.5">call</span><span>+91 483 276 8000</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-emerald-200 mt-0.5">mail</span><span>admissions@hmcollegemanjeri.edu.in</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-emerald-200 mt-0.5">location_on</span><span>Manjeri, Malappuram District, Kerala - 676121</span></div><div class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-emerald-200 mt-0.5">schedule</span><span>Mon - Sat: 9:00 AM - 4:30 PM IST</span></div></div></div><div><h3 class="font-title-md text-title-md text-white font-semibold mb-4">Social Links</h3><p class="font-body-sm text-body-sm text-white/80 mb-4">Connect with our community and stay informed on research and campus life.</p><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-white/80"><li><a class="flex items-center gap-2 hover:text-emerald-200 transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-emerald-200">link</span><span>LinkedIn</span></a></li><li><a class="flex items-center gap-2 hover:text-emerald-200 transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-emerald-200">public</span><span>X</span></a></li><li><a class="flex items-center gap-2 hover:text-emerald-200 transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-emerald-200">smart_display</span><span>YouTube</span></a></li><li><a class="flex items-center gap-2 hover:text-emerald-200 transition-colors" href="#"><span class="material-symbols-outlined text-[18px] text-emerald-200">photo_camera</span><span>Instagram</span></a></li></ul></div></div><div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-white/70" style="border-top: 1px solid rgba(255, 255, 255, 0.15);"><p>© 2026 HM College of Science and Technology, Manjeri. All rights reserved.</p><div class="flex gap-6"><a class="hover:text-white transition-colors" href="#">Privacy Policy</a><a class="hover:text-white transition-colors" href="#">Terms of Service</a><a class="hover:text-white transition-colors" href="#">Accreditation</a></div></div></div></footer>
+
+</body></html>
